@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagement.ConsoleUI
+namespace LibraryManagement.ConsoleUI.Models
 {
     public class Category
     {
         public Category()
         {
-            
+
         }
         public Category(int ıd, string name)
         {
