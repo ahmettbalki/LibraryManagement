@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement.ConsoleUI.Models
 {
-    public class Author : Entity<int>
+    public class Member : Entity<string>
     {
         public string Name { get; set; }
         public string Surname { get; set; }
+        public int Age { get; set; }
     }
-        
 }

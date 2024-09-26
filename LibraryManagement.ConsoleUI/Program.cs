@@ -32,8 +32,6 @@
 
 //Kullanıcıdan PageIndex ve PageSize değerlerini alarak sayfalama desteği getiriniz.
 
-using LibraryManagement.ConsoleUI.Models;
-
 
 //GetAllBooksByPageSizeFilter();
 //PageSizeTotalCalculator();
@@ -45,48 +43,48 @@ void PrintAyirac(string metin)
     Console.WriteLine("-------------------------");
 }
 
-bool AddCategoryValidator(Category category)
-{
-    bool isUnique = true;
+//bool AddCategoryValidator(Category category)
+//{
+//    bool isUnique = true;
 
-    foreach (Category item in categories)
-    {
-        if (item.Id == category.Id || item.Name == category.Name)
-        {
-            isUnique = false; 
-            break;
-        }
-    }
-    return isUnique;
-}
+//    foreach (Category item in categories)
+//    {
+//        if (item.Id == category.Id || item.Name == category.Name)
+//        {
+//            isUnique = false;
+//            break;
+//        }
+//    }
+//    return isUnique;
+//}
 
-void AddCategory()
-{
-    Category category = GetCategoryInput();
+//void AddCategory()
+//{
+//    Category category = GetCategoryInput();
 
-    bool isUnique = AddCategoryValidator(category);
+//    bool isUnique = AddCategoryValidator(category);
 
-    if (!isUnique)
-    {
-        Console.WriteLine("Girmiş olduğunuz id ve isim benzersiz değildir");
-        return;
-    }
-    categories.Add(category);
-    GetAllCategories();
+//    if (!isUnique)
+//    {
+//        Console.WriteLine("Girmiş olduğunuz id ve isim benzersiz değildir");
+//        return;
+//    }
+//    categories.Add(category);
+//    GetAllCategories();
 
-}
+//}
 
-bool AddAuthorValidator(Author author)
-{
-    bool isUnique = true;
+//bool AddAuthorValidator(Author author)
+//{
+//    bool isUnique = true;
 
-    foreach (Author item in authors)
-    {
-        if (item.Id == author.Id || item.Name == author.Name)
-        {
-            isUnique = false;
-            break;
-        }
-    }
-    return isUnique;
-}
+//    foreach (Author item in authors)
+//    {
+//        if (item.Id == author.Id || item.Name == author.Name)
+//        {
+//            isUnique = false;
+//            break;
+//        }
+//    }
+//    return isUnique;
+//}
